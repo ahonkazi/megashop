@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mt-section{
+    @apply mt-[50px]
+}
+
+.section-title{
+    @apply font-Montserrat text-2xl px-4 text-gray-800 py-4
+}
+.container{
+    @apply px-2
+}

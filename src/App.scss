@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+// root colors
+
+:root {
+
+    --color-primary: #f2a007;
+    --color-gray: rgb(174, 174, 174);
+
+}
+
+.shadow1 {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+// main wrapper
+
+.pl-250 {
+    padding-left: 250px;
+}
+
+
+.mainNav {
+    transform: translateY(0);
+    transition: transfrom 300ms;
+}
+
+.sticky-nav {
+    position: fixed;
+    top: -300px;
+    width: 100%;
+    transform: translateY(300px);
+}
+
