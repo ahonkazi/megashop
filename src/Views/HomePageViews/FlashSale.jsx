@@ -14,7 +14,7 @@ const FlashSale = () => {
                 <ButtonOutLinePrimary>Shop Now</ButtonOutLinePrimary>
             </div>
 
-            <div className="flash-items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 bg-slate-100 py-4 px-4">
+            <div className="flash-items grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 bg-slate-100 py-4 px-4">
                 {
                     [...new Array(6)].map(item =>
                         <ProductCard />

@@ -6,7 +6,7 @@ const JustForYou = () => {
     return (
         <section className='JustForYou px-4 mt-section'>
             <h2 className="section-title">Just For You</h2>
-            <div className="product-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="product-wrapper grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {
                     [...new Array(30)].map(item => <ProductCard />)
                 }

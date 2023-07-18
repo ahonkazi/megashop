@@ -2,6 +2,8 @@ import React from 'react'
 import img1 from '../../assets/images/Product/salt.jpg'
 import { ButtonOutLinePrimary } from '../Button/Button'
 import { Link } from 'react-router-dom'
+import { MdStar } from 'react-icons/md'
+import { BiStar } from 'react-icons/bi'
 export const ProductCard = () => {
 
     return (
@@ -37,5 +39,22 @@ export const CategoryCard = ({ img, text, link }) => {
             <img className='w-[70px]' src={img} alt="" />
             <p>{text}</p>
         </Link>
+    )
+}
+
+
+export const RatingCard = ({ rating }) => {
+    return (
+        <>
+            {
+                [...new Array(5)].map((item, index) => (index < rating) ? <MdStar /> : <BiStar />
+                )
+                
+            }
+            {
+                rating < 5? <p className='text-sm text-gray-500 pl-2'>And up</p> : ''
+            }
+            
+        </>
     )
 }

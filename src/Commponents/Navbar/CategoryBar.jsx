@@ -3,7 +3,7 @@ import style from "./desktop.module.scss"
 import { BiCategory, BiChevronDown, BiChevronRight } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { GetContext } from '../../context/Context'
-const CategoryBar = () => {
+const CategoryBar = ({ activeAlways }) => {
 
     const context = useContext(GetContext)
 
@@ -81,7 +81,7 @@ const CategoryBar = () => {
                         <p>Search By Category</p>
 
 
-                        <div className={`absolute ${style.searchByCategoryWrapper} lg:hidden top-full left-0 bg-white max-h-[80vh] w-[300px]`}>
+                        <div className={`absolute ${style.searchByCategoryWrapper} ${activeAlways ? '' : 'lg:hidden'}  top-full left-0 bg-white max-h-[80vh] w-[300px]`}>
                             <ul className="category-menu font-Montserrat">
 
                                 {
