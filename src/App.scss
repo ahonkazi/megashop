@@ -33,3 +33,44 @@
     transform: translateY(300px);
 }
 
+
+
+// profile nav
+
+.profileNav {
+    background-color: white;
+}
+
+.profileNav.active {
+    background-color: #f2a007;
+
+    svg {
+        fill: #f2a007 !important;
+    }
+}
+
+.profileNav.active span {
+    color: white !important;
+}
+
+.profileTopNav {
+    background-color: white;
+}
+
+.profileTopNav.active {
+    background-color: #f2a007;
+    border-radius: 5px;
+
+}
+
+.profileTopNav.active span {
+    color: white !important;
+}
+
+.shadow2 {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.admin-gap{
+    @apply mt-[15px] md:mt-[30px]
+}

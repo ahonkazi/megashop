@@ -2,7 +2,7 @@ import React from 'react'
 import img1 from '../../assets/images/Product/salt.jpg'
 import { ButtonOutLinePrimary } from '../Button/Button'
 import { Link } from 'react-router-dom'
-import { MdStar } from 'react-icons/md'
+import { MdClose, MdStar } from 'react-icons/md'
 import { BiStar } from 'react-icons/bi'
 export const ProductCard = () => {
 
@@ -49,12 +49,40 @@ export const RatingCard = ({ rating }) => {
             {
                 [...new Array(5)].map((item, index) => (index < rating) ? <MdStar /> : <BiStar />
                 )
-                
+
             }
             {
-                rating < 5? <p className='text-sm text-gray-500 pl-2'>And up</p> : ''
+                rating < 5 ? <p className='text-sm text-gray-500 pl-2'>And up</p> : ''
             }
-            
+
         </>
+    )
+}
+
+export const CheckoutProductCard = () => {
+    return (
+        <div className="px-4 font-Nunito justify-between py-2 bg-white shadow1 flex items-center gap-2 rounded">
+            <div className="flex gap-2 items-center">
+                <img className='h-[60px]' src={img1} alt="" />
+                <p className='text-gray-700'>Premium Salt 2Kg</p>
+            </div>
+            <div className="flex gap-2 items-center">
+                <p className='text-Primary-0 text-xl font-Nunito'>$124</p>
+                <button>
+                    <MdClose className='text-xl text-rose-500' />
+
+                </button>
+            </div>
+        </div>
+    )
+}
+
+
+export const PaymentMethodCard = ({ img, index, setActiveMethod, activeMethod }) => {
+    return (
+
+        <div onClick={()=>setActiveMethod(index)} className={`border ${index === activeMethod ? 'border-rose-500' : 'border-transparent'}  px-2 py-2 cursor-pointer`}>
+            <img className='h-[100px]' src={img} alt="" />
+        </div>
     )
 }

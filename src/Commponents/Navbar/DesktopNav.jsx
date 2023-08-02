@@ -42,9 +42,10 @@ const DesktopNav = () => {
                         <SearchWrapper />
                         <div className="right-icons shrink-0 xl:pl-[100px]">
                             <div className="buttons text-[28px] flex items-center gap-3">
-                                <button className={`${common.NavButton}`}> <BiCartAlt /> </button>
-                                <button className={`${common.NavButton}`}> <BiHeart /> </button>
-                                <button className={`${common.NavButton}`}> <BiUser /></button>
+
+                                <Link to={'/checkout'} className={`${common.NavButton}`}> <BiCartAlt /></Link>
+                                <Link to={'/profile/wishlist'} className={`${common.NavButton}`}> <BiHeart /> </Link>
+                                <Link to={'/profile'} className={`${common.NavButton}`}> <BiUser /></Link>
                             </div>
                         </div>
                     </div>
@@ -141,9 +142,10 @@ export const DesktopNavFilter = () => {
                         <SearchWrapper />
                         <div className="right-icons shrink-0 xl:pl-[100px]">
                             <div className="buttons text-[28px] flex items-center gap-3">
-                                <button className={`${common.NavButton}`}> <BiCartAlt /> </button>
-                                <button className={`${common.NavButton}`}> <BiHeart /> </button>
-                                <button className={`${common.NavButton}`}> <BiUser /></button>
+                                <Link to={'/checkout'} className={`${common.NavButton}`}> <BiCartAlt /></Link>
+                                <Link to={'/profile/wishlist'} className={`${common.NavButton}`}> <BiHeart /> </Link>
+                                <Link to={'/profile'} className={`${common.NavButton}`}> <BiUser /></Link>
+
                             </div>
                         </div>
                     </div>

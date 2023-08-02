@@ -31,8 +31,8 @@ const MobileNav = () => {
                             <img src="https://www.bdshop.com/pub/media/logo/stores/1/BDSHOP-LOGO-2022.jpg" title="BD SHOP" alt="BD SHOP" width="180" height="34" />
                         </Link>
                         <div className="buttons text-[24px] sm:text-[28px] flex items-center gap-2">
-                            <button className={`${common.NavButton}`}> <BiCartAlt /> </button>
-                            <button className={`${common.NavButton}`}> <BiUser /></button>
+                            <Link to={'/checkout'} className={`${common.NavButton}`}> <BiCartAlt /> </Link>
+                            <Link to={'/profile'} className={`${common.NavButton}`}> <BiUser /></Link>
                         </div>
                     </div>
                     <div className="mt-3">

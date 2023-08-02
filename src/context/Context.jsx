@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import axios from "axios";
+import { createContext, useEffect, useState } from "react";
 
 export const GetContext = createContext();
 
@@ -111,9 +112,8 @@ export const Context = ({ children }) => {
             ]
         },
     ]
-
+    const [adminSidebarStatus, setAdminSidebarStatus] = useState(true);
  
-
     return (
         <GetContext.Provider value={{
             mobileSidebarStatus,
@@ -123,6 +123,8 @@ export const Context = ({ children }) => {
             setSearchPanelStatus,
             setMobileCartSlide,
             mobileCartSlide,
+            adminSidebarStatus,
+            setAdminSidebarStatus
 
         }} >{children}</GetContext.Provider>
     )

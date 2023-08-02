@@ -13,3 +13,19 @@
 .container{
     @apply px-2
 }
+
+.admin-container{
+    @apply px-2 md:px-6 
+}
+
+.admin-navlink.active{
+    @apply bg-slate-100
+}
+
+.admin-title{
+    @apply font-Nunito text-xl text-slate-800
+}
+.admin-form{
+    @apply bg-white flex flex-col gap-4 px-4 mt-4 py-4 rounded
+ 
+}

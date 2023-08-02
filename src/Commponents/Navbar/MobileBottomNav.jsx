@@ -38,11 +38,12 @@ const MobileBottomNav = () => {
 
                     </li>
                     <li className={`${style.mobileBottomNavItem}`}>
-                        <button>
-                            <BiUser />
-                        </button>
-                        <div className={`${style.tooltip}`}>User</div>
-
+                        <Link to={'/profile/details'}>
+                            <button>
+                                <BiUser />
+                            </button>
+                            <div className={`${style.tooltip}`}>User</div>
+                        </Link>
                     </li>
                 </ul>
             </div>

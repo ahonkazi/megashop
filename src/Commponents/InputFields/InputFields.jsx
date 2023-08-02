@@ -1,4 +1,5 @@
 import React from 'react'
+import { ButtonBlue, ButtonOutLinePrimary } from '../Button/Button'
 
 export const SearchWrapper = () => {
     return (
@@ -9,3 +10,16 @@ export const SearchWrapper = () => {
     )
 }
 
+export const WriteAREview = () => {
+    return (
+        <div className="write-review mt-4">
+            <textarea name="" id="" className='resize-none border-gray-100 border outline-none min-h-[150px] w-full px-4 py-4' placeholder='Write a review...'></textarea>
+
+            <div className="flex py-4 justify-end items-center gap-4">
+
+                <ButtonOutLinePrimary>Cancel</ButtonOutLinePrimary>
+                <ButtonBlue>Send</ButtonBlue>
+            </div>
+        </div>
+    )
+}
